@@ -36,11 +36,11 @@ function displayWeather(temperature) {
     let outfitImage = "";
     if (temperature < 10) {
         clothingSuggestion = "It's quite cold! Wear a jacket or coat.";
-        outfitImage = "https://i.pinimg.com/736x/f1/0c/21/f10c21306235fe4c0182da74afb9a45d.jpg"; // Online image for cold weather
+        outfitImage = "https://wildcraft.com/media/mageplaza/blog/post/8/_/8_winter_outfits.jpg"; // Online image for cold weather
         document.body.classList.add('cold');
     } else if (temperature >= 10 && temperature <= 20) {
         clothingSuggestion = "It's a bit chilly. A sweater or light jacket would be good.";
-        outfitImage = "https://wildcraft.com/media/mageplaza/blog/post/8/_/8_winter_outfits.jpg"; // Online image for chilly weather
+        outfitImage = "https://i.pinimg.com/736x/f1/0c/21/f10c21306235fe4c0182da74afb9a45d.jpg"; // Online image for chilly weather
         document.body.classList.remove('cold');
     } else if (temperature > 20 && temperature <= 30) {
         clothingSuggestion = "The weather is warm! A t-shirt and shorts would be great.";
