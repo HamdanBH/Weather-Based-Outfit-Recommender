@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Suggestion Based on Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather-Based Clothing Suggestion</h1>
+        <label for="location">Enter Location:</label>
+        <input type="text" id="location" placeholder="e.g., London">
+        <button id="getWeather">Get Weather</button>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="spinner"></div>
+
+        <!-- Weather Info and Clothing Suggestion -->
+        <div id="weatherInfo"></div>
+        <div id="clothingSuggestion"></div>
+
+        <!-- Outfit Image -->
+        <div id="outfitImage">
+            <img id="outfitImg" src="" alt="Suggested Outfit" style="display: none; width: 100%; max-width: 300px;">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
